@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" c>
+    <title>Spa and Massage Services Services in Porac, Central Luzon | Aces Private Resort in Pampanga</title>
+    <meta name="description" c>
+    <meta name="keywords" c>
+    <meta name="robots" c>
+    <meta name="author" c>
+    
+    <!-- Open Graph -->
+    <meta property="og:type" c>
+    <meta property="og:url" c>
+    <meta property="og:title" c>
+    <meta property="og:description" c>
+    <meta property="og:site_name" c>
+    
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" c>
+    <meta property="twitter:url" c>
+    <meta property="twitter:title" c>
+    <meta property="twitter:description" c>
+    
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://facebook.com/AcesPrivateResort/spa-and-massage-services-in-porac">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FAQ Structured Data -->
+    
+    
+    <style>
+        
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Inter', 'Segoe UI', 'Helvetica Neue', sans-serif;
+        line-height: 1.6;
+        color: #000000;
+        background: #ffffff;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    
+    .container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 1.5rem;
+    }
+    
+    @media (min-width: 640px) {
+        .container {
+            padding: 0 2.5rem;
+        }
+    }
+    
+    @media (min-width: 1024px) {
+        .container {
+            padding: 0 4rem;
+        }
+    }
+    
+    /* Menu Toggle Input (CSS-only fallback) */
+    .menu-toggle-input {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        width: 50px;
+        height: 50px;
+        opacity: 0;
+        z-index: 1001;
+        cursor: pointer;
+    }
+    
+    /* Burger Menu Styles */
+    .burger-menu {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        z-index: 1000;
+        background: #FFD700;
+        border: 2px solid #000000;
+        border-radius: 0;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s ease;
+        user-select: none;
+        -webkit-tap-highlight-color: transparent;
+    }
+    
+    .burger-menu:hover,
+    .burger-menu:focus-within {
+        background: #000000;
+        outline: 2px solid #FFD700;
+        outline-offset: 2px;
+    }
+    
+    .burger-menu:hover .burger-line,
+    .burger-menu:focus-within .burger-line {
+        background: #FFD700;
+    }
+    
+    .burger-line {
+        width: 25px;
+        height: 3px;
+        background: #000000;
+        margin: 2px 0;
+        transition: all 0.3s ease;
+        pointer-events: none;
+    }
+    
+    /* Active states - both JavaScript and CSS-only */
+    .burger-menu.active .burger-line:nth-child(1),
+    .menu-toggle-input:checked ~ .burger-menu .burger-line:nth-child(1) {
+        transform: rotate(45deg) translate(6px, 6px);
+    }
+    
+    .burger-menu.active .burger-line:nth-child(2),
+    .menu-toggle-input:checked ~ .burger-menu .burger-line:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .burger-menu.active .burger-line:nth-child(3),
+    .menu-toggle-input:checked ~ .burger-menu .burger-line:nth-child(3) {
+        transform: rotate(-45deg) translate(6px, -6px);
+    }
+    
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        left: -300px;
+        width: 300px;
+        height: 100vh;
+        background: #ffffff;
+        border-right: 2px solid #000000;
+        z-index: 999;
+        transition: left 0.3s ease;
+        overflow-y: auto;
+        padding-top: 80px;
+        box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+    }
+    
+    /* Active states - both JavaScript and CSS-only */
+    .nav-menu.active,
+    .menu-toggle-input:checked ~ .nav-menu {
+        left: 0;
+    }
+    
+    .nav-menu h3 {
+        padding: 0 20px 10px 20px;
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: #000000;
+        border-bottom: 1px solid #cccccc;
+        margin-bottom: 20px;
+    }
+    
+    .nav-link {
+        display: block;
+        padding: 15px 20px;
+        color: #000000;
+        text-decoration: none;
+        border-bottom: 1px solid #f0f0f0;
+        transition: background-color 0.3s ease;
+        cursor: pointer;
+    }
+    
+    .nav-link:hover {
+        background: #FFD700;
+    }
+    
+    .nav-link.active {
+        background: #FFD700;
+        color: #000000;
+    }
+    
+    .nav-city, .nav-service {
+        font-weight: 600;
+        font-size: 1rem;
+        display: block;
+    }
+    
+    .nav-location {
+        font-size: 0.875rem;
+        color: #666666;
+        margin-top: 2px;
+        display: block;
+    }
+    
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 998;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+    
+    /* Active states - both JavaScript and CSS-only */
+    .overlay.active,
+    .menu-toggle-input:checked ~ .overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    /* Loading state for better UX */
+    .menu-loading .burger-menu {
+        opacity: 0.7;
+        pointer-events: none;
+    }
+    
+    /* Accessibility improvements */
+    @media (prefers-reduced-motion: reduce) {
+        .burger-menu,
+        .burger-line,
+        .nav-menu,
+        .overlay {
+            transition: none;
+        }
+    }
+    
+    /* Focus management for better accessibility */
+    .nav-menu:focus-within {
+        outline: none;
+    }
+    
+    .nav-link:focus {
+        outline: 2px solid #FFD700;
+        outline-offset: 2px;
+        background: #FFD700;
+    }
+    
+    /* Mobile improvements */
+    @media (max-width: 480px) {
+        .nav-menu {
+            width: 280px;
+        }
+        
+        .burger-menu {
+            top: 15px;
+            left: 15px;
+        }
+        
+        .menu-toggle-input {
+            top: 15px;
+            left: 15px;
+        }
+    }
+    
+    header {
+        background: #FFD700;
+        color: #000000;
+        padding: 1.5rem 0;
+        border-bottom: 2px solid #000000;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+    
+    .logo {
+        font-size: clamp(1.25rem, 4vw, 1.75rem);
+        font-weight: 700;
+        color: #000000;
+        text-decoration: none;
+        text-align: center;
+        display: block;
+    }
+  
+        
+        /* Hero Section */
+        .hero {
+            background: #ffffff;
+            padding: clamp(2rem, 8vw, 4rem) 0;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: clamp(1.5rem, 5vw, 2.5rem);
+            font-weight: 700;
+            color: #000000;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+            text-align: center;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .hero .subtitle {
+            font-size: clamp(1rem, 3vw, 1.25rem);
+            color: #333333;
+            margin-bottom: 2rem;
+            font-weight: 500;
+            line-height: 1.5;
+            text-align: center;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .cta-button, .button {
+            background: #FFD700;
+            color: #000000;
+            border: 2px solid #000000;
+            padding: clamp(12px, 3vw, 16px) clamp(20px, 5vw, 32px);
+            text-decoration: none;
+            border-radius: 0;
+            font-weight: 600;
+            font-size: clamp(14px, 3vw, 16px);
+            display: inline-block;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            text-align: center;
+        }
+        
+        .cta-button:hover, .button:hover {
+            background: #000000;
+            color: #FFD700;
+        }
+        
+        /* Sections */
+        .section {
+            padding: clamp(2rem, 6vw, 3rem) 0;
+        }
+        
+        .section + .section {
+            border-top: 1px solid #e0e0e0;
+        }
+        
+        .section h2 {
+            font-size: clamp(1.25rem, 4vw, 2rem);
+            font-weight: 700;
+            color: #000000;
+            margin-bottom: clamp(1.5rem, 4vw, 2rem);
+            line-height: 1.2;
+            text-align: center;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+        
+        /* Content text improvements */
+        .content-text {
+            font-size: clamp(1rem, 2.5vw, 1.125rem);
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+            color: #000000;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: left;
+            padding: 0 1rem;
+        }
+        
+        @media (min-width: 768px) {
+            .content-text {
+                padding: 0 2rem;
+            }
+        }
+        
+        /* Benefits Grid */
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: clamp(1rem, 3vw, 2rem);
+            margin: clamp(1.5rem, 4vw, 2rem) 0;
+        }
+        
+        @media (max-width: 768px) {
+            .benefits-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .benefits-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        .benefit-card {
+            background: #FFD700;
+            padding: clamp(1.5rem, 4vw, 2rem);
+            border-radius: 0;
+            border: 2px solid #000000;
+            transition: none;
+        }
+        
+        .benefit-card h3 {
+            font-size: clamp(1rem, 2.5vw, 1.25rem);
+            font-weight: 600;
+            color: #000000;
+            margin-bottom: 1rem;
+            line-height: 1.3;
+            word-wrap: break-word;
+            text-align: center;
+        }
+        
+        .benefit-card p {
+            color: #000000;
+            line-height: 1.6;
+            font-size: clamp(0.875rem, 2vw, 1rem);
+            text-align: left;
+        }
+        
+        /* Steps */
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: clamp(1rem, 3vw, 2rem);
+            margin: clamp(1.5rem, 4vw, 2rem) 0;
+        }
+        
+        .step {
+            text-align: center;
+            padding: clamp(1.5rem, 4vw, 2rem);
+            background: #FFD700;
+            border-radius: 0;
+            border: 2px solid #000000;
+        }
+        
+        .step-number {
+            background: #000000;
+            color: #FFD700;
+            width: clamp(2.5rem, 8vw, 3rem);
+            height: clamp(2.5rem, 8vw, 3rem);
+            border-radius: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: clamp(1rem, 3vw, 1.25rem);
+            margin: 0 auto 1.5rem auto;
+        }
+        
+        .step h3 {
+            font-size: clamp(1rem, 2.5vw, 1.25rem);
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #000000;
+            line-height: 1.3;
+            text-align: center;
+        }
+        
+        .step p {
+            color: #000000;
+            line-height: 1.6;
+            font-size: clamp(0.875rem, 2vw, 1rem);
+            text-align: left;
+        }
+        
+        /* Testimonials - Fixed quote styling */
+        .testimonials {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: clamp(1rem, 3vw, 2rem);
+            margin: clamp(1.5rem, 4vw, 2rem) 0;
+        }
+        
+        .testimonial {
+            background: #FFD700;
+            padding: clamp(2rem, 5vw, 2.5rem);
+            border-radius: 0;
+            border: 2px solid #000000;
+            position: relative;
+        }
+        
+        .testimonial::before {
+            content: '"';
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+            color: #333333;
+            position: absolute;
+            top: 1rem;
+            left: 1.5rem;
+            font-weight: 700;
+            opacity: 0.7;
+            z-index: 1;
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 1.5rem;
+            font-size: clamp(1rem, 2.5vw, 1.125rem);
+            line-height: 1.6;
+            color: #000000;
+            text-align: left;
+            position: relative;
+            z-index: 2;
+            margin-top: 1rem;
+        }
+        
+        .testimonial-author {
+            font-weight: 600;
+            color: #000000;
+            font-size: clamp(0.875rem, 2vw, 1rem);
+            text-align: center;
+        }
+        
+        /* FAQ Section */
+        .faq-container {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            margin-bottom: 1rem;
+            border: 2px solid #000000;
+            border-radius: 0;
+            overflow: hidden;
+            background: #ffffff;
+        }
+        
+        .faq-item details {
+            cursor: pointer;
+        }
+        
+        .faq-item summary {
+            background: #ffffff;
+            padding: clamp(1rem, 3vw, 1.5rem);
+            font-weight: 600;
+            color: #000000;
+            border-bottom: 1px solid #000000;
+            cursor: pointer;
+            list-style: none;
+            transition: background-color 0.3s ease;
+            font-size: clamp(0.875rem, 2.5vw, 1rem);
+            line-height: 1.4;
+            text-align: left;
+        }
+        
+        .faq-item summary:hover {
+            background: #f5f5f5;
+        }
+        
+        .faq-item summary::-webkit-details-marker {
+            display: none;
+        }
+        
+        .faq-item summary::after {
+            content: '+';
+            float: right;
+            font-size: clamp(1rem, 3vw, 1.25rem);
+            color: #000000;
+            font-weight: 700;
+        }
+        
+        .faq-item[open] summary::after {
+            content: '−';
+        }
+        
+        .faq-answer {
+            padding: clamp(1rem, 3vw, 1.5rem);
+            background: #ffffff;
+            line-height: 1.6;
+            color: #000000;
+            font-size: clamp(0.875rem, 2vw, 1rem);
+            text-align: left;
+        }
+        
+        /* Final CTA */
+        .final-cta {
+            background: #ffffff;
+            color: #000000;
+            padding: clamp(2rem, 6vw, 4rem) 0;
+            text-align: center;
+            border-top: 2px solid #e0e0e0;
+        }
+        
+        .final-cta h2 {
+            color: #000000;
+            margin-bottom: 1rem;
+        }
+        
+        .final-cta p {
+            font-size: clamp(1rem, 2.5vw, 1.125rem);
+            margin-bottom: 2rem;
+            opacity: 1;
+            line-height: 1.5;
+        }
+        
+        .final-cta .cta-button {
+            background: #FFD700;
+            color: #000000;
+            border: 2px solid #000000;
+        }
+        
+        .final-cta .cta-button:hover {
+            background: #000000;
+            color: #FFD700;
+        }
+        
+        /* Footer */
+        footer {
+            background: #ffffff;
+            color: #000000;
+            padding: clamp(2rem, 5vw, 3rem) 0;
+            text-align: center;
+            border-top: 1px solid #cccccc;
+        }
+        
+        footer p {
+            margin-bottom: 0.5rem;
+            opacity: 1;
+            font-size: clamp(0.875rem, 2vw, 1rem);
+            line-height: 1.5;
+        }
+        
+        footer a {
+            color: #000000;
+            text-decoration: underline;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .container { padding: 0 15px; }
+            .hero { padding: 2rem 0; }
+            .section { padding: 2rem 0; }
+            .steps { grid-template-columns: 1fr; }
+            .testimonials { grid-template-columns: 1fr; }
+            .benefits-grid { grid-template-columns: 1fr; }
+            
+            .nav-menu {
+                width: 280px;
+                left: -280px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .container { padding: 0 10px; }
+            .hero { padding: 1.5rem 0; }
+            .section { padding: 1.5rem 0; }
+            .benefit-card, .step, .testimonial { padding: 1rem; }
+        }
+    </style>
+    <meta name="google-site-verification" content="2e2961f8874104f90730a485f6bf2fba" />
+  </head>
+<body>
+    <!-- Menu Toggle Input for CSS-only fallback -->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle-input" aria-label="Toggle navigation menu">
+    
+    <!-- Burger Menu -->
+    <label for="menu-toggle" class="burger-menu" role="button" tabindex="0" aria-label="Toggle navigation menu" aria-expanded="false">
+        <div class="burger-line" aria-hidden="true"></div>
+        <div class="burger-line" aria-hidden="true"></div>
+        <div class="burger-line" aria-hidden="true"></div>
+    </label>
+    
+    <!-- Navigation Menu -->
+    <nav class="nav-menu" id="navMenu" role="navigation" aria-label="Page navigation">
+        <h3>All Local Business Pages</h3>
+        
+    <a href="./private-pool-villa-rentals-in-angeles-city.html" class="nav-link" data-page="./private-pool-villa-rentals-in-angeles-city.html" role="menuitem">
+      <span class="nav-city">Private Pool Villa Rentals</span>
+      <small class="nav-location">Angeles City</small>
+    </a>
+  
+    <a href="./family-and-corporate-event-packages-in-san-fernando.html" class="nav-link" data-page="./family-and-corporate-event-packages-in-san-fernando.html" role="menuitem">
+      <span class="nav-city">Family and Corporate Event Packages</span>
+      <small class="nav-location">San Fernando</small>
+    </a>
+  
+    <a href="./day-tour-and-picnic-packages-in-clark-freeport-zone.html" class="nav-link" data-page="./day-tour-and-picnic-packages-in-clark-freeport-zone.html" role="menuitem">
+      <span class="nav-city">Day Tour and Picnic Packages</span>
+      <small class="nav-location">Clark Freeport Zone</small>
+    </a>
+  
+    <a href="./wedding-venue-services-in-tarlac-city.html" class="nav-link" data-page="./wedding-venue-services-in-tarlac-city.html" role="menuitem">
+      <span class="nav-city">Wedding Venue Services</span>
+      <small class="nav-location">Tarlac City</small>
+    </a>
+  
+    <a href="./spa-and-massage-services-in-porac.html" class="nav-link active" data-page="./spa-and-massage-services-in-porac.html" role="menuitem">
+      <span class="nav-city">Spa and Massage Services</span>
+      <small class="nav-location">Porac</small>
+    </a>
+  
+    </nav>
+    
+    <!-- Overlay -->
+    <div class="overlay" id="overlay" aria-hidden="true"></div>
+    
+    <header>
+        <div class="container">
+            <a href="https://facebook.com/AcesPrivateResort" class="logo">Aces Private Resort in Pampanga</a>
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Expert Spa and Massage Services Services in Porac, Central Luzon | Aces Private Resort in Pampanga</h1>
+            <p class="subtitle">Professional spa and massage services services in Porac, Central Luzon. Aces Private Resort in Pampanga delivers exceptional results with licensed professionals, modern equipment, and 100% satisfaction guarantee.</p>
+            <a href="https://facebook.com/AcesPrivateResort/contact" class="cta-button">Get Your Free Spa and Massage Services Quote Today</a>
+        </div>
+    </section>
+    
+    <!-- AI Generated Image Section -->
+    
+    
+    <!-- Main Content -->
+    <section class="section">
+        <div class="container">
+            <p class="content-text">Professional spa and massage services services in Porac, Central Luzon require expertise, reliability, and attention to detail – qualities that define Aces Private Resort in Pampanga. Our clients choose us because we consistently deliver superior results while maintaining competitive pricing and exceptional customer service standards.</p>
+            <p class="content-text">Our comprehensive spa and massage services solutions address both immediate needs and long-term objectives. We evaluate each project holistically, considering factors like efficiency, durability, and future maintenance requirements. This thorough approach ensures you receive maximum value from your investment.</p>
+            <p class="content-text">Experience matters in spa and massage services work, and Aces Private Resort in Pampanga brings years of hands-on expertise to every project. Our skilled professionals stay current with industry developments, emerging technologies, and best practices to provide cutting-edge solutions that meet today's demanding standards.</p>
+            <p class="content-text">We understand that spa and massage services projects can be disruptive, which is why we prioritize efficiency and minimal interference with your daily routine. Our team works diligently to complete projects on schedule while maintaining the highest quality standards and leaving your space clean and organized.</p>
+            <p class="content-text">In addition to core spa and massage services services, we provide related solutions including Private Pool Villa Rentals, Family and Corporate Event Packages, Day Tour and Picnic Packages, Wedding Venue Services, Spa and Massage Services, Karaoke and Entertainment Rental, Catering and Food Services, Team-Building Activity Coordination, Overnight Accommodation Packages. This expanded capability allows us to serve as your single source for comprehensive project management, reducing coordination challenges and ensuring seamless integration of all work components.</p>
+            <p class="content-text">Aces Private Resort in Pampanga serves clients throughout Angeles City, San Fernando, Clark Freeport Zone, Tarlac City, Porac, Magalang, Dau, Mexico, Capas, Bacolor, Concepcion, Floridablanca, offering consistent quality and responsive service regardless of location. Our reputation for reliability and professionalism has made us the preferred choice for discerning customers who demand excellence in spa and massage services services.</p>
+        </div>
+    </section>
+
+    <!-- Location Map -->
+    <section class="section">
+        <div class="container">
+            <h2>Find Aces Private Resort in Pampanga in Porac, Central Luzon</h2>
+            
+    <div class="map-container" style="margin: 2rem 0; width: 100%; height: 350px; border: 2px solid #000000; border-radius: 0;">
+      <iframe 
+        src="https://maps.google.com/maps?q=Aces%20Private%20Resort%20in%20Pampanga%20Porac%2C%20Central%20Luzon&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+        width="100%" 
+        height="100%" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Location of Aces Private Resort in Pampanga in Porac, Central Luzon">
+      </iframe>
+    </div>
+  
+        </div>
+    </section>
+    
+    <!-- Why Choose Section -->
+    <section class="section">
+        <div class="container">
+            <h2>Why Choose Aces Private Resort in Pampanga for Spa and Massage Services?</h2>
+            <div class="benefits-grid">
+                
+                <div class="benefit-card">
+                    <h3>Authentic Kapampangan Healing Techniques</h3>
+                    <p>Our therapists blend traditional Pampanga massage methods with modern techniques, offering a unique therapeutic experience that draws from generations of local healing wisdom.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <h3>Mountain-View Treatment Rooms</h3>
+                    <p>Experience total relaxation in private spa rooms overlooking the serene Zambales Mountains, creating a naturally calming atmosphere unique to our Porac location.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <h3>24/7 Couples Spa Packages</h3>
+                    <p>Enjoy romantic spa treatments any time with our round-the-clock couples services, perfect for guests seeking flexibility or after their Clark Airport arrivals.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <h3>Indigenous Herb-Infused Treatments</h3>
+                    <p>We incorporate locally-sourced Pampanga herbs and oils in our treatments, providing authentic aromatherapy benefits while supporting regional farmers and producers.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <h3>Post-Treatment Relaxation Garden</h3>
+                    <p>Extend your wellness experience in our private bamboo garden with complimentary herbal tea service, allowing the full benefits of your treatment to settle.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <h3>Mobile Massage Service</h3>
+                    <p>We offer in-room massage services to major hotels and resorts throughout Porac and Clark area, bringing our expert therapeutic treatments directly to you.</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+    <!-- How It Works -->
+    <section class="section">
+        <div class="container">
+            <h2>How Aces Private Resort in Pampanga's Spa and Massage Services Process Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Free Consultation</h3>
+                    <p>Contact Aces Private Resort in Pampanga for your complimentary spa and massage services assessment and detailed quote. We'll evaluate your needs and provide expert recommendations.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Custom Solution Design</h3>
+                    <p>Our experts design a tailored spa and massage services plan that fits your specific requirements, timeline, and budget constraints.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Professional Execution</h3>
+                    <p>Aces Private Resort in Pampanga's licensed professionals execute your spa and massage services project with precision, keeping you informed every step of the way.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials -->
+    <section class="section">
+        <div class="container">
+            <h2>What Our Spa and Massage Services Customers Say</h2>
+            <div class="testimonials">
+                
+                <div class="testimonial">
+                    <div class="testimonial-text">Finally tried Aces after my friend kept raving about it. The place is tucked away but worth finding! Had their 90-min traditional Filipino massage and it was exactly what I needed after a stressful work week. The masseuse (Annie) had really strong hands and worked out all the knots in my shoulders. Only giving 4 stars because the AC was a bit too cold in the room and they were running about 15 mins late for my appointment. But will definitely be back!</div>
+                    <div class="testimonial-author">– Maria Santos R., Angeles City</div>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="testimonial-text">Been going to Aces Private Resort for almost a year now. Their hot stone massage is seriously the best I've found in Pampanga. The facilities aren't super fancy but they're clean and comfortable. Ms. Grace at the front desk always remembers my name and preferred pressure level. They've raised their prices a bit recently but still worth it imo. My go-to place to destress after long flights.</div>
+                    <div class="testimonial-author">– James Chen, Clark</div>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="testimonial-text">Ok lng. Tried their couples massage package last weekend w/ my husband. The massage itself was good but the 'private resort' part is pretty basic - just a small pool and some loungers. Nothing special. Also wish they had better parking. Had to park on the street which wasn't great. But the staff were friendly and professional. Might come back just for massage next time.</div>
+                    <div class="testimonial-author">– Maricel D., Mabalacat</div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+    <!-- FAQ Section with Related Searches -->
+    <section class="section">
+        <div class="container">
+            <h2>Frequently Asked Questions About Spa and Massage Services</h2>
+            <div class="faq-container">
+                
+                <div class="faq-item">
+                    <details>
+                        <summary>What are your operating hours and do I need to make a reservation?</summary>
+                        <div class="faq-answer">Aces Private Resort is open daily from 10:00 AM to 12:00 AM (midnight). While walk-ins are welcome, we highly recommend making advance reservations, especially during weekends and holidays. You can book by calling us at +63 945 XXX XXXX or through our Facebook page. For spa services, we require at least 2 hours advance booking to ensure therapist availability.</div>
+                    </details>
+                </div>
+                
+                <div class="faq-item">
+                    <details>
+                        <summary>How much do your massage services cost and what types do you offer?</summary>
+                        <div class="faq-answer">Our massage services range from ₱500 to ₱1,500 depending on the type and duration. Our most popular options include: Traditional Filipino Hilot (₱700/1hr), Swedish Massage (₱800/1hr), Deep Tissue Massage (₱1,000/1hr), and Couples Massage (₱1,500/1hr). All services include hot towel treatment and your choice of aromatherapy oils. We also offer package deals for groups and special occasions.</div>
+                    </details>
+                </div>
+                
+                <div class="faq-item">
+                    <details>
+                        <summary>Is there parking available and how do I get to your location from Angeles City?</summary>
+                        <div class="faq-answer">Yes, we have free secure parking for our guests. We're located in Porac, approximately 20 minutes from Angeles City. From Angeles, take the Angeles-Porac Road and follow the signs to [specific location]. Look for our blue and white signage. If using Grab or a taxi, you can provide 'Aces Private Resort, Porac' as your destination - most local drivers know our location.</div>
+                    </details>
+                </div>
+                
+                <div class="faq-item">
+                    <details>
+                        <summary>Are your massage therapists licensed and what safety protocols do you follow?</summary>
+                        <div class="faq-answer">All our therapists are DOH-licensed professionals with at least 3 years of experience. They undergo regular training and certification updates. We maintain strict hygiene protocols including regular sanitization of massage rooms, fresh linens for each client, and proper hand hygiene. Our therapists wear appropriate PPE, and we follow all local health guidelines. We also maintain valid business permits and spa operation licenses from the Porac municipal government.</div>
+                    </details>
+                </div>
+                
+                <div class="faq-item">
+                    <details>
+                        <summary>Do you offer private rooms and what amenities are included with spa services?</summary>
+                        <div class="faq-answer">Yes, we provide private, air-conditioned rooms for all spa services. Each room includes its own shower facility and changing area. Complimentary amenities include fresh towels, disposable underwear, shower essentials, and hot tea after your treatment. For couples or group bookings, we have larger rooms available. We also offer access to our hot tub and relaxation area for an additional fee of ₱300 per person.</div>
+                    </details>
+                </div>
+                
+            </div>
+            
+        <div class="related-searches-text" style="margin-top: 1.5rem; padding: 1rem; background: #f8f9fa; border-left: 3px solid #FFD700; font-size: 0.9rem; color: #666;">
+          <strong>Related Searches:</strong> private resort in Pampanga, resorts near Mabalacat City, family resort with private pool near me, affordable private resort in Angeles City, wedding venue Pampanga resort, corporate team building resorts Central Luzon, best private resort for group events in Pampanga
+        </div>
+      
+        </div>
+    </section>
+    
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <div class="container">
+            <h2>Ready for Expert Spa and Massage Services Services in Porac, Central Luzon?</h2>
+            <p>Contact Aces Private Resort in Pampanga today for your free consultation and experience the difference that professional spa and massage services services make.</p>
+            <a href="https://facebook.com/AcesPrivateResort/contact" class="cta-button">Contact Aces Private Resort in Pampanga Today</a>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Aces Private Resort in Pampanga. All rights reserved.</p>
+            <p>Licensed & Insured Spa and Massage Services Services in Porac, Central Luzon</p>
+            <p><a href="https://facebook.com/AcesPrivateResort">Visit Aces Private Resort in Pampanga</a> | Professional spa and massage services solutions since 2015</p>
+        </div>
+    </footer>
+    
+    
+</body>
+</html>
